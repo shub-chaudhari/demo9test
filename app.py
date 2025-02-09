@@ -14,8 +14,8 @@ def main():
         if user_input:
             reversed_text = user_input[::-1]+selected_file  # Reverse the text
             
-            st.success("Summary :")
-            st.write(f"{reversed_text}")
+            st.success("Summary : \n "+reversed_text)
+            
         else:
             st.warning("Please enter some text before submitting.")
 
