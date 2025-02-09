@@ -7,6 +7,7 @@ def main():
     # Input Text Box
     user_input = st.text_input("Enter something:", "")
 
+    selected_file = st.selectbox("Select a dictionary file:", pickle_files)
     # Submit Button
     if st.button("Submit"):
         if user_input:
