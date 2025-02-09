@@ -5,10 +5,10 @@ def main():
     st.title("Text Summary Generation")
 
     # Input Text Box
-    user_input = st.text_input("Enter something:", "")
+    user_input = st.text_input("Enter a news article to summarize:", "")
     
     pickle_files = ["Model1","Model2","Model3"]
-    selected_file = st.selectbox("Select a dictionary file:", pickle_files)
+    selected_file = st.selectbox("Select the model:", pickle_files)
     # Submit Button
     if st.button("Submit"):
         if user_input:
