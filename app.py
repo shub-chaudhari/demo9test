@@ -16,7 +16,7 @@ def main():
             st.success(f"summary:")
             st.markdown(
                 f"""
-                <div style="border: 2px solid black; padding: 10px; background-color: #f5f5f5; border-radius: 5px;">
+                <div style="border: 2px solid grey; padding: 10px; background-color: #f5f5f5; border-radius: 5px;">
                     {reversed_text}
                 </div>
                 """, 
