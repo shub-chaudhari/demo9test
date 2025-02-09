@@ -13,10 +13,11 @@ def main():
     if st.button("Submit"):
         if user_input:
             reversed_text = user_input[::-1]+selected_file  # Reverse the text
-            st.success(f"summary:")
+            # st.success(f"summary:")
             st.markdown(
                 f"""
-                <div style="border: 2px solid grey; padding: 10px; background-color: #f5f5f5; border-radius: 5px;">
+                <div style="border: 2px solid grey; padding: 10px; background-color: #83f28f; border-radius: 5px;">
+                    <strong>Summary:</strong><br>
                     {reversed_text}
                 </div>
                 """, 
