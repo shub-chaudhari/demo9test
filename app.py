@@ -2,7 +2,7 @@ import streamlit as st
 
 # Streamlit App
 def main():
-    st.title("Simple Streamlit Web App")
+    st.title("Text Summary Generation")
 
     # Input Text Box
     user_input = st.text_input("Enter something:", "")
@@ -10,7 +10,8 @@ def main():
     # Submit Button
     if st.button("Submit"):
         if user_input:
-            st.success(f"You entered: {user_input}")
+            reversed_text = user_input[::-1]  # Reverse the text
+            st.success(f"Reversed Text: {reversed_text}")
         else:
             st.warning("Please enter some text before submitting.")
 
