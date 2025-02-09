@@ -13,8 +13,9 @@ def main():
     if st.button("Submit"):
         if user_input:
             reversed_text = user_input[::-1]+selected_file  # Reverse the text
-            print("Summary")
-            st.success(f"{reversed_text}")
+            
+            st.success("Summary :")
+            st.write(f"{reversed_text}")
         else:
             st.warning("Please enter some text before submitting.")
 
