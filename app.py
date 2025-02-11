@@ -7,7 +7,7 @@ def main():
     # Input Text Box
     user_input = st.text_input("Enter a news article to summarize:", "")
     
-    pickle_files = ["Model1","Model2","Model3"]
+    pickle_files = ["BERT","T5-small","BART-base"]
     selected_file = st.selectbox("Select the model:", pickle_files)
     # Submit Button
     if st.button("Submit"):
